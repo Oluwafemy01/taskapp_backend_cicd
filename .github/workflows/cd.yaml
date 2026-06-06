@@ -61,7 +61,7 @@ jobs:
           # GITHUB_TOKEN can't push cross-repo, so use DEPLOY_REPO_TOKEN — a
           # PAT with contents:write on the deploy repo.
           # Add it under repo Settings -> Secrets and variables -> Actions.
-          repository: onlydurodola/taskapp_deploy
+          repository: ts-a-devops/taskapp_deploy
           token: ${{ secrets.DEPLOY_REPO_TOKEN }}
       - name: Update BACKEND_TAG and push
         run: |
